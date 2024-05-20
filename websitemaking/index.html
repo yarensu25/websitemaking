@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>WEBSITE MAKING</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url('backgrounds.jpg'); /* Add your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        nav {
+            background-color: #b29b9b;
+            color: white;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__content {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin-left: 20px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .section {
+            background-color: rgba(244, 244, 244, 0.5); /* Semi-transparent background color */
+            padding: 50px;
+            /* Remove display: flex; */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Add min-height */
+        }
+
+        .section__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 600px;
+            padding-right: 50px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .title {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 50px;
+            color: #16155f;
+            margin: 10px 0;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .action__btns {
+            margin-top: 20px;
+        }
+
+        .portfolio {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 20px 20px;
+            font-size: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            color: #333;
+            font-size: 34px;
+        }
+
+        /* Additional CSS styles for the header */
+        .section__header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .section__container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content {
+                padding: 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav__content">
+                <div class="logo"><a href="#">HOME</a></div>
+                <label for="check" class="checkbox">
+                    <i class="ri-menu-line"></i>
+                </label>
+                <input type="checkbox" name="check" id="check" />
+                <ul>
+                    <li><a href="portfolio.html" class="portfolio-button">PORTFOLIO</a></li>
+                    <li><a href="blog.html" class="Blog_button">BLOG</a></li>
+                    <li><a href="Resume.html" class="Resume_button">RESUME</a></li>
+                    <li><a href="services.html" class="Service">SERVICES</a></li>
+                    <li><a href="Testemonial.html" class="Testemonial">TESTEMONIAL</a></li>
+                    <li><a href="FAQ.html" class="FAQ">FAQ</a></li>
+                    <li><a href="404 ERROR PAGE.html" class="ERROR">ERROR PAGE</a></li>
+
+                    
+                </ul>
+            </div>
+        </nav>
+        <section class="section">
+          <div class="section__container">
+              <div class="content">
+                  <p class="subtitle"></p>
+                  <h1 class="title">
+                      <span>ZOREN JAY VILLABER
+                        <br /> I AM COLLEGE STUDENT AND I AM 19 YEARS OLD</span>
+                  </ul>
+                  </span>
+                  <p class="description">
+                  </p>
+                  <div class="action__btns">                      
+                  </div>
+                  <div class="social-media">
+                      <a href="https://www.facebook.com/zoren.villaber.1" class="social-link"><i class="ri-facebook-fill"></i></a>
+                      <a href="https://www.instagram.com/ya.rensu/" class="social-link"><i class="ri-instagram-fill"></i></a>
+                  </div>
+              </div>
+              <div class="image">
+                  <img src="rensu.jpg" alt="profile" />
+              </div>
+          </div>
+        </section>
+    </div>
+</body>
+</html>

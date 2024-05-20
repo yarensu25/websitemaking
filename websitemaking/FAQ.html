@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My FAQ</title>
+<link rel="stylesheet" href="stylesFF.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item">
+        <h3>How do I build a strong professional network in the IT industry?</h3>
+        <div class="FAQ-answer">
+            <p>Engaging in networking activities is not just a suggestion; it's a strategic imperative in today's competitive professional landscape. By actively participating in networking events, joining esteemed professional organizations, immersing oneself in online forums, and cultivating connections through platforms like LinkedIn, individuals can unlock a treasure trove of opportunities that extend far beyond traditional job searches.
+
+                Networking events serve as fertile grounds for forging meaningful connections with like-minded professionals, industry leaders, and potential collaborators. Whether it's attending conferences, workshops, or seminars, these gatherings offer invaluable opportunities to exchange ideas, gain insights into emerging trends, and establish rapport with individuals who may influence one's career trajectory.
+            </p>
+        </div>
+    </div>
+    <div class="FAQ">
+        <h3>Which programming languages must I to study?</h3>
+        <div class="FAQ">
+            <p>Determining which programming languages to prioritize depends greatly on a multitude of factors, with your hobbies and career objectives playing a significant role. Whether you're aiming for web development, data science, artificial intelligence, or software engineering, each field tends to have its preferred set of languages.
+
+                For instance, if you're inclined towards web development, mastering languages like Python, JavaScript, and perhaps even some familiarity with Java can prove invaluable. Python's versatility and ease of use make it a favorite for backend development and scripting tasks, while JavaScript dominates the front-end scene with its widespread use in frameworks like React and Angular. Java, on the other hand, remains a stalwart for enterprise-level web applications.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3>What career paths can I pursue with an IT degree?</h3>
+        <div class="FAQ-answer">
+            <p>The field of Information Technology (IT) is a vast and ever-expanding realm that presents a myriad of career opportunities, each offering its own unique set of challenges and rewards. From the intricacies of software development to the complexities of cybersecurity, from the analytical depths of data analysis to the intricate web of network administration, the IT industry is teeming with possibilities for those with the right skills and passion.</p>
+        </div>
+    </div>
+</div>
+<div class="back-button">
+    <a href="index.html">Back to Home</a>
+</div>
+</div>
+</div>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

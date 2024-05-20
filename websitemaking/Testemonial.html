@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials</title>
+<link rel="stylesheet" href="Styley.css">
+</head>
+<body>
+<header>
+<h1>My Testimonials</h1>
+<nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+    </ul>
+</nav>
+</header>
+
+<div class="testimonial">
+    <div class="testimonial-text" class="container">
+        <img src="test.jpg" alt="Image">
+        <p>OKAY NANA BOSS</p>
+        <p class="name">Boss Kent</p>
+    </div>
+</div>
+<div class="testimonial">
+     <div class="testimonial-text" class="container">
+         <img src="perds.jpg" alt="Image">
+         <p>NP PERDS</p>
+         <p class="name">PERDS</p>
+     </div>
+</div>
+<div class="testimonial">
+    <div class="testimonial-text" class="container">
+        <img src="teest.jpg" alt="Image">
+        <p>KARON NA?</p>
+        <p class="name">MY GIRLFRIEND</p>
+    </div>
+</div>           
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+  <button class="next" onclick="moveSlide(1)">❯</button>
+<footer>
+    <script>
+        let slideIndex = 0;
+
+function showSlide(n) {
+  const slides = document.getElementsByClassName("testimonial");
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
+}
+
+function moveSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+showSlide(slideIndex);
+
+    </script>
+<p></p>
+</footer>
+</body>
+</html>
